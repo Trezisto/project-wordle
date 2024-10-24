@@ -230,3 +230,53 @@ h1 {
     transform: translateY(0%);
   }
 }
+
+/*
+I definitely need to take a good CSS course one time... Please make a discount for me! 😂😁
+*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.keyButton {
+  position: relative;
+  width:30px;
+  display: grid;
+  place-content: center;
+  aspect-ratio: 1 / 1;
+  background-color: var(--color-gray-700);
+  border: 2px solid var(--color-gray-700);
+  border-radius: var(--radius);
+  font-size: 1.3rem;
+  margin: 2px 5px; 
+  box-sizing: border-box;
+}
+.keyButton.correct {
+  background: var(--color-success);
+  border-color: var(--color-success);
+  color: white;
+}
+.keyButton.incorrect {
+  background: var(--color-gray-300);
+  border-color: var(--color-gray-300);
+  color: white;
+}
+.keyButton.misplaced {
+  background: var(--color-warning);
+  border-color: var(--color-warning);
+  color: white;
+}
+
+.restart-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
